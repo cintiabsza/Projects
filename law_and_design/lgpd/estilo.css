@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FonteP";
+  src: url("fonts/Poppins/Poppins-Light.ttf");
+}
+html {
+   scroll-behavior: smooth;
+}
+body{
+   margin: 0;
+   display: grid;
+   grid-template-columns: min-content 1fr;
+   font-family: FonteP;
+   font-size: 16px;
+   }
+h1 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  font-size: 15px;
+}
+header {
+  grid-column: 1/3;
+  background: rgb(152, 78, 133);
+  color: white;
+  padding: 4rem;
+  text-align: left;
+  font: FonteP;
+  font-size: 20px;
+}
+nav {
+  white-space: nowrap;
+  background: rgba(154, 195, 186, 0.91);
+}
+nav ul {
+  list-style: none;
+  margin: 00px;
+  padding: 0px;
+  width: 240px;
+  background: rgba(154, 195, 186, 0.91);
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  line-height: 1px;
+
+}
+nav ul li a:hover {
+  background: rgba(58, 180, 154, 0.91);
+  color: white;
+  transition: 0.3s;
+}
+nav ul ul li a {
+  font-size: 13px;
+  padding-left: 30px;
+
+}
+nav ul ul li a:hover {
+  background: rgba(58, 180, 154, 0.91);
+
+}
+ul ul{
+  display: none;
+}
+ul.itensCap1.show{
+  display: block;
+}
+
+main {
+  padding-bottom: 40rem;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+section {
+  padding: 2rem;
+  margin: 0 0 2rem 0;
+}
+footer {
+  grid-column: 1/3;
+  background: rgb(126, 125, 128);
+  padding: 2rem;
+  height: 60px;;
+}
